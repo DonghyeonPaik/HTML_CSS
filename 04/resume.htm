@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, tr, td {
+            border: solid 1px black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+
+        }
+        td{
+            height: 22px;
+        }
+        .td_purple{
+            background-color: rgba(100, 50, 200, 0.3);
+            border-right: double;
+        }
+        
+        h1.a{
+            font-size: 48px;
+            font-family: serif;
+            text-align: center;
+        }
+        h1.a:after{
+            content: "";
+            display: block;
+            width: 330px;
+            border-bottom: 5px solid #ababab;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="a">이&nbsp;&nbsp;&nbsp;력&nbsp;&nbsp;&nbsp;서</h1>
+    <br>
+    <table align="center">
+        <!-- col: 20 -->
+        <colgroup>
+            <col style="width: 40px;"><col style="width: 40px;">
+            <col style="width: 40px;"><col style="width: 40px;">
+            <col style="width: 40px;"><col style="width: 40px;">
+            <col style="width: 40px;"><col style="width: 40px;">
+            <col style="width: 40px;"><col style="width: 40px;">
+            <col style="width: 40px;"><col style="width: 40px;">
+            <col style="width: 40px;"><col style="width: 40px;">
+            <col style="width: 40px;"><col style="width: 40px;">
+            <col style="width: 40px;"><col style="width: 40px;">
+            <col style="width: 40px;"><col style="width: 40px;">
+        </colgroup>
+        <tr>
+            <td colspan="3" rowspan="4">사진<br><br>(3.5cmx4.5cm)</td>
+            <td colspan="2" rowspan="2">성명</td>
+            <td colspan="2">한글</td>
+            <td colspan="5"></td>
+            <td colspan="3">생년월일</td>
+            <td colspan="5"></td>
+        </tr>
+        <tr>
+            <td colspan="2">한자</td>
+            <td colspan="5"></td>
+            <td colspan="3">만 나이</td>
+            <td colspan="5"></td>
+        </tr>
+        <tr>
+            <td colspan="4">주소</td>
+            <td colspan="13"></td>
+        </tr>
+        <tr>
+            <td colspan="4">연락처</td>
+            <td colspan="13" style="text-align: left;">짐/핸드폰 : </td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="td_purple">병역</td>
+            <td colspan="5">복무기간</td>
+            <td colspan="2">군별</td>
+            <td colspan="2">계급</td>
+            <td colspan="4">병과</td>
+            <td colspan="6">면제사유</td>
+        </tr>
+        <tr>
+            <td colspan="5"></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+            <td colspan="4"></td>
+            <td colspan="6"></td>
+        </tr>
+        <tr>
+            <td rowspan="4" class="td_purple">최종학력</td>
+            <td colspan="5">기간</td>
+            <td colspan="8">학교명</td>
+            <td colspan="6">전공(학위)</td>
+        </tr>
+        <tr>
+            <td colspan="5">-</td>
+            <td colspan="8"></td>
+            <td colspan="6"></td>
+        </tr>
+        <tr>
+            <td colspan="5">-</td>
+            <td colspan="8"></td>
+            <td colspan="6"></td>
+        </tr>
+        <tr>
+            <td colspan="5"></td>
+            <td colspan="8"></td>
+            <td colspan="6"></td>
+        </tr>
+        <tr>
+            <td rowspan="6" class="td_purple">경<br><br>력</td>
+            <td colspan="5">기간</td>
+            <td colspan="5">근무처</td>
+            <td colspan="3">직위(급)</td>
+            <td colspan="6">업무내용</td>
+        </tr>
+        <tr>
+            <td colspan="5">-</td>
+            <td colspan="5"></td>
+            <td colspan="3"></td>
+            <td colspan="6"></td>
+        </tr>
+        <tr>
+            <td colspan="5">-</td>
+            <td colspan="5"></td>
+            <td colspan="3"></td>
+            <td colspan="6"></td>
+        </tr>
+        <tr>
+            <td colspan="5">-</td>
+            <td colspan="5"></td>
+            <td colspan="3"></td>
+            <td colspan="6"></td>
+        </tr>
+        <tr>
+            <td colspan="5">-</td>
+            <td colspan="5"></td>
+            <td colspan="3"></td>
+            <td colspan="6"></td>
+        </tr>
+        <tr>
+            <td colspan="5">-</td>
+            <td colspan="5"></td>
+            <td colspan="3"></td>
+            <td colspan="6"></td>
+        </tr>
+        <tr>
+            <td rowspan="5" class="td_purple">자격증</td>
+            <td colspan="5">취득년월일</td>
+            <td colspan="8">자격 · 면허명</td>
+            <td colspan="6">시행처</td>
+        </tr>
+        <tr>
+            <td colspan="5"></td>
+            <td colspan="8"></td>
+            <td colspan="6"></td>
+        </tr>
+        <tr>
+            <td colspan="5"></td>
+            <td colspan="8"></td>
+            <td colspan="6"></td>
+        </tr>
+        <tr>
+            <td colspan="5"></td>
+            <td colspan="8"></td>
+            <td colspan="6"></td>
+        </tr>
+        <tr>
+            <td colspan="5"></td>
+            <td colspan="8"></td>
+            <td colspan="6"></td>
+        </tr>
+        <tr>
+            <td colspan="20">
+                    본인은 아래 기재내용이 사실과 다름이 없음을 확인하며, 허위 기재 사실이 발견될 경우<br>
+                    불합격 등 어떤 처분에도 일체의 이의를 제기하지 않겠습니다.
+                <br>
+                <br>
+                <div style="text-align: right; padding-right: 50px;">년&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;월&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;일</div>
+                <br>
+                <div style="text-align: right; padding-right: 50px;">성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명 : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="인.png"></div>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <a href="04_main.htm">목차로 이동</a>
+</body>
+</html>
