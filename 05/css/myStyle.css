@@ -1,0 +1,5 @@
+h3{
+    color: rgb(255,0,0);
+    /* color는 단어, 16진수, rgb, rgba 등으로 지정 가능함 */
+    font-size: 20px;
+}
