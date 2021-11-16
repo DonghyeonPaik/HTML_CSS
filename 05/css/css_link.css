@@ -1,0 +1,16 @@
+a:link{ /* a tag를 처음 로딩했을 때 */
+    color: #0000FF;
+    text-decoration: none;
+}
+a:visited{ /* 방문했던 사이트 링크에 대한 설정 */
+    color: #00FF00;
+}
+a:hover{ /* 마우스를 롤 오버 했을 때 [커서를 올렸을 때] */
+    color: #FF0000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+a:active{ /* 마우스로 링크를 클릭했을 때 */
+    color: #00FFFF;
+    
+}
