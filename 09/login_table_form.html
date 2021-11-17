@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in Table Form 만들기</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: "맑은 고딕", "돋움";
+            font-size: 12px;
+            color: #131111;
+        }
+        #login_box{
+            width: 220px;
+            height: 120px;
+            border: 1px solid #bbbbbb;
+            border-radius: 15px;
+            margin: 10px 0 0 10px;
+            padding: 10px 0 0 15px;
+        }
+        h2{
+            font-family: "sans-serif";
+            color: #000000;
+            margin-bottom: 10px;
+        }
+        table{
+            border: none;
+            background-color: #fff;
+        }
+        #login_box input{
+            width: 100px;
+            height: 18px;
+        }
+        #login_btn button{
+            font-weight: bold;
+            font-size: 14px;
+            margin-left: 5px;
+            padding: 12px;
+            border-radius: 5px;
+        }
+        #login_btn button:hover{
+            cursor: pointer;
+        }
+        #third{
+            height: 30px;
+        }
+        td span a{
+            color: #444444;
+        }
+        #find{
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <div id="login_box">
+            <h2>Member Login</h2>
+            <table>
+                <tr>
+                    <td>ID</td>
+                    <td colspan="3"><input type="text"></td>
+                    <td rowspan="2" colspan="2" id="login_btn"><button>로그인</button></td>
+                </tr>
+                <tr>
+                    <td>PW</td>
+                    <td colspan="3"><input type="password"></td>
+                </tr>
+                <tr id="third">
+                    <td colspan="6">
+                        <span id="signUp"><a href="empty_page.html">회원가입</a></span>
+                        <span id="find"><a href="empty_page.html">아이디/비밀번호 찾기</a></span>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+    </form>
+    <br>
+    <br>
+    <a href="09_main">목록으로 돌아가기</a>
+</body>
+</html>

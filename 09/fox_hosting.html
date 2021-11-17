@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fox Hosting</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "나눔고딕";
+        }
+
+        #outer {
+            overflow: auto;
+            width: 949px;
+            display: inline-block;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(245, 245, 245);
+            margin: 20px;
+            padding: 10px;
+        }
+        #mid{
+            margin: 0 20px 0 20px;
+        }
+        .cell {
+            display: table-cell;
+            vertical-align: middle;
+            width: 300px;
+            height: 200px;
+            background-color: #fff;
+            border-radius: 25px;
+            padding: 0 10px 0 10px;
+            box-shadow: 5px 5px 5px 5px #eee;
+        }
+        .tr {
+            height: 90px;
+        }
+        .mid_tr{
+            height: 60px;
+        }
+        td {
+            padding: 5px 0 5px 0;
+        }
+
+        img {
+            width: 120px;
+            align-items: center;
+        }
+
+        .headline {
+            vertical-align: bottom;
+            padding-bottom: 0;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        .comments {
+            vertical-align: top;
+            font-size: 12px;
+            color: #444;
+        }
+
+        #left {
+            border: none;
+        }
+
+        #middle,
+        #right {
+            border: 2px solid #66ccff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <span>
+            <table class="cell" id="left">
+                <tr class="tr">
+                    <td rowspan="2"><img src="img/fox-in-suit.png"></td>
+                    <td class="headline">
+                        <h3>
+                            모든 웹사이트를 누가 호스팅하는지 찾으십시오
+                        </h3>
+                    </td>
+                </tr>
+                <tr class="tr">
+                    <td class="comments">
+                        웹사이트의 URL을 입력하여 어떤 호스팅 서비스를 사용하는지 알아보십시오
+                    </td>
+                </tr>
+            </table>
+        </span>
+        <span id="mid">
+            <table class="cell" id="middle">
+                <tr class="mid_tr">
+                    <td rowspan="3"><img src="img/fox-with-horn.png"></td>
+                    <td class="headline">
+                        <h3>
+                            시장 점유율 2021
+                        </h3>
+                    </td>
+                </tr>
+                <tr class="mid_tr">
+                    <td rowspan="2" class="comments">
+                        국가별로 나뉜 각 호스팅 회사의 2021 시장 점유율을 살펴보십시오
+                    </td>
+                </tr>
+            </table>
+        </span>
+        <span>
+            <table class="cell" id="right">
+                <tr class="tr">
+                    <td rowspan="2"><img src="img/fox-with-server.png"></td>
+                    <td class="headline">
+                        <h3>
+                            웹 호스팅의 일대일 비교
+                        </h3>
+                    </td>
+                </tr>
+                <tr class="tr">
+                    <td class="comments">
+                        3개까지의 웹 호스팅 회사를 간단히 비교하고 어느 것이 더 나은지 보십시오
+                    </td>
+                </tr>
+            </table>
+        </span>
+    </div>
+    <br>
+    <br>
+    <a href="09_main">목록으로 돌아가기</a>
+</body>
+
+</html>
