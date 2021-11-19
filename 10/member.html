@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입정보</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style-type: none;
+        }
+        h2{
+            font-size: 15px;
+            margin: 20px 0 0 50px;
+        }
+        #mem_form{
+            display: inline-block;
+            font-size: 12px;
+            margin: 10px 0 0 50px;
+            padding: 10px 0 10px 0;
+            border-top: 3px solid darkcyan;
+        }
+        .cols{
+            border-bottom: 1px solid grey;
+            padding: 10px 0 5px 0;
+        }
+        .cols li{
+            display: inline-block;
+            height: 30px;
+            padding-left: 10px;
+        }
+        .col1{
+            width: 100px;
+            text-align: end;
+            vertical-align: top;
+        }
+        .col2{
+            width: 400px;
+            text-align: left;
+        }
+        #bluebutton{
+            border-radius: 3px;
+            width: 60px;
+            font-size: 12px;
+            color: white;
+            background-color: darkcyan;
+        }
+        .hp{
+            width: 60px;
+        }
+        #last{
+            text-align: center;
+        }
+        #reset{
+            width: 80px;
+        }
+        #submit{
+            width: 80px;
+        }
+        input{
+            width: 80px;
+            display: inline-block;
+        }
+        .birthy{
+            width: 50px;
+        }
+        .birth{
+            width: 20px;
+        }
+        .etc{
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>회원가입정보</h2>
+    <form action="#">
+        <ul id="mem_form">
+            <li>
+                <ul class="cols">
+                    <li class="col1">* 아이디 </li>
+                    <li class="col2"><input type="text">&nbsp;<button id="bluebutton" type="button">중복확인</button>
+                    영문, 숫자 조합으로 4~12자 이내
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">* 비밀번호 </li>
+                    <li class="col2"><input type="password"> 영문, 숫자 조합으로 4~12자 이내</li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">* 비밀번호 확인 </li>
+                    <li class="col2"><input type="password"></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">* 이름 </li>
+                    <li class="col2"><input type="text"></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">* 생년월일 </li>
+                    <li class="col2"><input class="birthy" type="text">년&nbsp;
+                        <input class="birth" type="text">월&nbsp;
+                        <input class="birth" type="text">일&nbsp;
+                        <input class="etc" type="radio" name="a">&nbsp;음력&nbsp;&nbsp;
+                        <input class="etc" type="radio" name="a">&nbsp;양력
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">* 이메일 </li>
+                    <li class="col2"><input type="text">@<select>
+                        <option>선택</option>
+                        <option>naver.com</option>
+                        <option>daum.net</option>
+                        <option>hanmail.net</option>
+                        <option>nate.com</option>
+                        <option>gmail.com</option>
+                    </select></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">* 휴대전화 </li>
+                    <li class="col2"><select>
+                        <option>010</option>
+                        <option>011</option>
+                        <option>013</option>
+                        <option>017</option>
+                        <option>019</option>
+                    </select>&nbsp;-&nbsp;<input type="text" class="hp">&nbsp;-&nbsp;<input type="text" class="hp"></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">직업 </li>
+                    <li class="col2"><select>
+                        <option>직업선택</option>
+                        <option>의사</option>
+                        <option>판사</option>
+                        <option>변호사</option>
+                        <option>프로그래머</option>
+                        <option>기타</option>
+                    </select></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="cols">
+                    <li class="col1">영어수강목적 </li>
+                    <li class="col2">
+                        <input class="etc" type="checkbox" name="hobby1">시험대비&nbsp;
+                        <input class="etc" type="checkbox" name="hobby2">업무상&nbsp;
+                        <input class="etc" type="checkbox" name="hobby3">취미&nbsp;
+                        <input class="etc" type="checkbox" name="hobby4">기타
+                    </li>
+                </ul>
+            </li>
+            <li id="last">
+                <br>
+                <input type="reset" id="reset" value="가입취소">&nbsp;&nbsp;&nbsp;<input type="submit" id="submit" value="가입완료">
+            </li>
+        </ul>
+    </form>
+    <br>
+    <br>
+    <br>
+    <a href="10_main.htm">목록으로 돌아가기</a>
+</body>
+</html>
+</head>
+<body>
+    
+</body>
+</html>
