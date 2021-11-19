@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 레이아웃</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        header {
+            width: 800px;
+            height: 60px;
+            margin: 2px;
+            border: 2px solid #ff0000;
+        }
+
+        aside {
+            width: 174px;
+            height: 400px;
+            float: left;
+            margin: 2px;
+            border: 2px solid #ff0000;
+        }
+
+        nav {
+            height: 150px;
+            margin-bottom: 50px;
+            margin: 2px;
+            border: 2px solid #0000ff;
+        }
+
+        main {
+            width: 618px;
+            height: 400px;
+            float: left;
+            margin: 2px;
+            border: 2px solid #ff0000;
+        }
+
+        section {
+            width: 500px;
+            height: 150px;
+            margin: 2px;
+            border: 2px solid #00ff00;
+        }
+
+        footer {
+            width: 800px;
+            height: 90px;
+            margin: 2px;
+            border: 2px solid #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        상단 헤더
+    </header>
+    <aside>
+        좌측
+        <nav>
+            메뉴
+        </nav>
+    </aside>
+    <main>
+        메인 컨텐츠
+        <section>
+            컨텐츠 1
+        </section>
+        <section>
+            컨텐츠 2
+        </section>
+    </main>
+    <div class="clear"></div>
+    <footer>
+        하단 푸터
+    </footer>
+</body>
+
+</html>

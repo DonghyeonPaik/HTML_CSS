@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부모, 자식 box에 position 설정</title>
+    <style>
+        /*
+            부모 box에 position이 설정되면
+            자식 box는 position: absolute;일 경우 부모가 기준이 됨.
+        */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #parent{
+            width: 500px;
+            height: 300px;
+            border: 3px solid black;
+            margin: 50px 0 0 50px;
+            position: relative;
+        }
+        #box1, #box2, #box3{
+            width: 80px;
+            height: 80px;
+        }
+        #box1{
+            background-color: #ff0000;
+        }
+        #box2{
+            background-color: #00ff00;
+            position: absolute;
+            /* 부모 box의 position이 설정되어 있어서
+                부모box를 기준으로 position이 설정됨 */
+            top: 20px;
+            left: 30px;
+        }
+        #box3{
+            background-color: #0000ff;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="box1">박스 A</div>
+        <div id="box2">박스 B</div>
+        <div id="box3">박스 C</div>
+    </div>
+</body>
+</html>
