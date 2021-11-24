@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그래디언트 속성</title>
+    <style>
+        #grad1{
+            /* 
+                < linear-gradient의 각도 적용 >
+                0, 360deg -> 위쪽으로 색 변화
+                90deg -> 오른쪽으로 색 변화
+                180deg -> 아래쪽으로 색 변화
+                270deg -> 왼쪽으로 색 변화
+             */
+            height: 70px;
+            background: linear-gradient(270deg, red, yellow);
+            /* 
+                linear-gradient(red, yellow)는
+                linear-gradient(180deg, red, yellow)와 같다!
+            */
+        }
+        #grad2{
+            height: 70px;
+            background: linear-gradient(red, yellow, green);
+        }
+        #grad3{
+            height: 70px;
+            background: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+        }
+        #grad4{
+            /*
+                to right -> 오른쪽으로 색 변화 [= 90deg]
+            */
+            height: 70px;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        }
+    </style>
+</head>
+<body>
+    <h4>2색 선형 그래디언트</h4>
+    <div id="grad1"></div>
+    <h4>3색 선형 그래디언트</h4>
+    <div id="grad2"></div>
+    <h4>7색 선형 그래디언트</h4>
+    <div id="grad3"></div>
+    <h4>7색 선형 그래디언트 [to right]</h4>
+    <div id="grad4"></div>
+    <p><strong>참고: </strong>최신 브라우저를 사용해주셔야 합니다.</p>
+</body>
+</html>

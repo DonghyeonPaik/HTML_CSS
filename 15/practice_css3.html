@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animation 연습</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: orange;
+            transition: all ease 1s;
+        }
+        .box:hover{
+            transform: rotate(360deg);
+        }
+        #Rotate{
+            width: 100px;
+            height: 100px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: orange;
+            transition: all ease 1s;
+        }
+        #Rotate:hover{
+            backface-visibility: visible;
+            transform-origin: 50% 42%;
+            transform: perspective(500px) rotateY(180deg) rotateX(0deg);
+        }
+        #circle{
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            border-radius: 70px;
+            background-color: lightgreen;
+            transition: all ease 1s;
+        }
+        #circle:active{
+            transform: rotate(360deg);
+        }
+        #Rotate2{
+            width: 100px;
+            height: 100px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: orange;
+            transition: all ease 1s;
+        }
+        #Rotate2:active{
+            backface-visibility: visible;
+            transform-origin: 50% 42%;
+            transform: perspective(500px) rotateY(180deg) rotateX(0deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <br>
+    <div id="Rotate"></div>
+    <br>
+    <br>
+    <div id="circle">
+        <br>
+        <div id="Rotate2"></div>
+    </div>
+</body>
+</html>

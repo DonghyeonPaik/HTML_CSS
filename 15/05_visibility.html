@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가시성 속성</title>
+    <style>
+        /*
+            visibility: hidden을 적용해도 그 영역은 그대로 할당되어 있음
+            display: none을 적용하면 영역까지 none이 됨
+        */
+        .v1{
+            visibility: hidden;
+            border: 1px dotted red;
+        }
+        .v2{
+            visibility: visible;
+            border: 1px dotted red;;
+        }
+        .v3{
+            display: none;
+            border: 1px dotted red;
+        }
+        .v4{}
+    </style>
+</head>
+<body>
+    <div class="v1"><img src="img/pic1.jpg"></div>
+    <div class="v2"><img src="img/pic1.jpg"></div>
+    <div class="v3"><img src="img/pic1.jpg"></div>
+    <div class="v4"><img src="img/pic1.jpg"></div>
+</body>
+</html>
