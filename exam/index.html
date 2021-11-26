@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쇼핑몰 회원관리 VER 1.0</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style-type: none;
+        }
+        body{
+            font-family: sans-serif;
+            font-size: 100%;
+            background-color: #eeeeee;
+        }
+        .clear{
+            clear: both;
+        }
+        header{
+            text-align: center;
+        }
+        h1{
+            font-size: 36px;
+            font-weight: 600;
+            padding: 15px;
+            background-color: #1e3fff;
+            color: #ffffff;
+        }
+        header nav{
+            vertical-align: middle;
+            background-color: #afafff;
+            color: #ffffff;
+            padding: 15px 0;
+        }
+        header nav ul li{
+            display: inline-block;
+            padding: 0 20px;
+        }
+        @media only screen and (max-width: 768px){
+            nav ul{
+                display: block;
+            }
+            nav ul li{
+                margin: 0;
+                height: 30px;
+                width: 100%;
+            }
+            #main{
+                width: 100%;
+                overflow-x: auto;
+            }
+        }
+        #main{
+            padding: 50px 5px;
+        }
+        #main h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #main table{
+            width: 600px;
+            border: 2px solid #4e4e4e;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table tr{
+            height: 30px;
+        }
+        table tr td{
+            border: 1px solid #4e4e4e;
+            width: 300px;
+        }
+        .table_title{
+            text-align: center;
+            font-weight: 700;
+        }
+        table tr td input, select{
+            width: 200px;
+            margin-left: 10px;
+            border-radius: 7px;
+            background: linear-gradient(90deg, #7fbfff, #ffffff)
+        }
+        #bottom_btn{
+            text-align: center;
+        }
+        footer{
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(90deg, #1e5fff, #7fbfff);
+            color: #ffffff;
+        }
+        footer h3{
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>쇼핑몰 회원관리 VER 1.0</h1>
+        <nav>
+            <ul>
+                <li>회원등록</li>
+                <li>회원목록조회/수정</li>
+                <li>회원매출조회</li>
+                <li>홈으로</li>
+            </ul>
+        </nav>
+        <div class="clear"></div>
+    </header>
+    <main>
+        <section id="main">
+            <h2>쇼핑몰 회원 등록</h2>
+            <!-- 고객 등급은 VIP, 일반, 직원을 선택할 수 있는
+                select form으로 구현해야 함! -->
+                <table>
+                    <tr>
+                        <td class="table_title">회원번호(자동발생)</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="table_title">회원성명</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="table_title">회원주소</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="table_title">가입일자</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="table_title">고객등급[A:VIP,B:일반,C:직원]</td>
+                        <td>
+                            <select>
+                                <option>A:VIP</option>
+                                <option>B:일반</option>
+                                <option>C:직원</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table_title">도시코드</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td id="bottom_btn" colspan="2">
+                            <button type="submit">등록</button>
+                            <button type="button">조회</button>
+                        </td>
+                    </tr>
+                </table>
+        </section>
+    </main>
+    <footer>
+        <h3>HRDKOREA Copyright＠2016 All rights reserve. Human Resources Development Service of Korea</h3>
+    </footer>
+</body>
+</html>

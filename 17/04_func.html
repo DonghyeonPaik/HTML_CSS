@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 함수와 무명 함수의 호출 우선순위</title>
+</head>
+<body>
+    <script>
+        function printMsg(msg){
+            document.write("기본 함수: "+msg+"<br>");
+        }
+        var printMsg = function(msg){
+            document.write("무명 함수: "+msg+"<br>");
+        }
+        printMsg("호출되었습니다.");
+        // 무명 함수가 먼저 호출됨을 알 수 있음!
+    </script>
+</body>
+</html>

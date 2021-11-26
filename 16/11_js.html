@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전역변수와 지역변수 활용</title>
+</head>
+<body>
+    <script>
+        function getGrade(){
+            var kor=95; // 지역변수
+        }
+        getGrade();
+        document.write("국어 점수는 "+kor+"점<br>");
+        document.write("지역변수는 함수 외부에서 사용 불가");
+    </script>
+</body>
+</html>
