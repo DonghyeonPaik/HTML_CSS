@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 992px;
+    font-family: "Helvetica";
+    font-size: 12px;
+}
+
+.navbar {
+    height: 60px;
+    padding-left: 30px;
+}
+
+.logo {
+    line-height: 60px;
+    float: left;
+}
+
+.logo img {
+    vertical-align: middle;
+}
+
+.navbar ul {
+    float: right;
+}
+
+.navbar li {
+    list-style-type: none;
+    float: left;
+    margin-right: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-style: bold;
+    font-size: 13px;
+}
+
+section#right {
+    width:900px;
+    margin: 0 auto;
+}
+
+section#right #summary h3 {
+    font-size:16px;
+    padding-bottom:8px;
+    border-bottom:solid 1px #444444;
+}
+
+section#right #summary h3 span {
+    color:#80a727;
+}
+section#right #summary1 {
+    float:left;
+    margin-top:20px;
+}
+section#right #summary1 .buttons {
+    text-align:center;
+    margin-top:10px;
+}
+section#right #summary2 {
+    width:390px;
+    float:right;
+    margin-top:20px;
+}
+section#right #summary2 .item {
+    margin:20px 0 0 20px;
+    padding-bottom:10px;
+    border-bottom:solid 1px #cccccc;
+}
+section#right #summary2 .item li {
+    margin:10px 0 0 0; 
+}
+section#right #summary2 .col1 {
+    width:100px;
+    float:left;
+}
+section#right #summary2 .col2 {
+    width:200px;
+    float:left;
+}
+section#right #summary2 .size {
+    margin:20px 0 0 20px;
+    padding-bottom:10px;
+    border-bottom:solid 1px #cccccc;
+}
+section#right #summary2 .size li {
+    margin:5px 0; 
+}
+section#right #summary2 .buttons {
+    margin:15px 0 0 120px;
+}
+section#right #summary2 .buttons li {
+    display:inline;
+}
+/* 상품 설명 */
+section#right #explanation h3 {
+    font-size:16px;
+    padding-bottom:8px;
+    margin-top:30px;
+    border-bottom:solid 1px #444444;	
+    color:#80a727;
+}
+section#right #explanation h2 {
+    margin:20px 0 0 20px;
+}
+section#right #explanation img{
+    width: 850px;
+}
+/* 유의 사항 */
+section#right #required h3 {
+    font-size:16px;
+    padding-bottom:8px;
+    margin-top:30px;
+    border-bottom:solid 1px #444444;
+    color:#80a727;	
+}
+section#right #required dl {
+    margin:20px 0 0 30px;
+}
+section#right #required dt {
+    font-size:14px;
+    font-weight:bold;
+    margin-top:20px;
+}
+section#right #required dd {
+    font-size:13px;
+    margin:5px 0 0 20px;
+}
+.clear {
+    clear:both;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer img {
+    margin-top: 40px;
+    height: 100px;
+    margin-bottom: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
